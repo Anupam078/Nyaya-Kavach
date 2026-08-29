@@ -1,0 +1,14 @@
+[
+  {
+    "provision_id": "bonded-labour-1976-core-prohibition",
+    "act_name": "The Bonded Labour System (Abolition) Act, 1976 (Act 19 of 1976)",
+    "section_number": "Sections 6, 16, 17",
+    "raw_text": "Whoever advances, after the commencement of this Act, any bonded debt shall be punishable with imprisonment for a term which may extend to three years and also with fine which may extend to two thousand rupees. On the commencement of this Act, every obligation of a bonded labourer to repay any bonded debt shall stand extinguished.",
+    "simplified_text": "If a loan or advance payment comes with a condition that you (or your family) must work for the lender until the debt is paid off - especially work with no real wages, or work you can't refuse or leave - this is called bonded labour, and it is completely illegal in India, not just risky. Anyone who sets up such an arrangement can be jailed. Any existing debt of this kind is legally cancelled - you don't have to keep repaying it through labor. This is one of the most serious violations this system should be able to detect, since it combines a loan document with a labor document in a way that traps people.",
+    "jurisdiction": "India (Central Act, applies uniformly - not touched by the 2025-26 Labour Code reforms since it derives from Constitutional Articles 21 and 23, a separate legal track)",
+    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1491/1/197619.pdf",
+    "verification_status": "VERIFIED_FROM_BARE_ACT_TEXT",
+    "note": "HIGH PRIORITY ADDITION. This directly matches a real, serious rural exploitation pattern: a 'loan' document where repayment terms effectively bind the borrower (or their family) to unpaid or underpaid labor for the lender. This clause spans your Interest/Finance-Terms and Wage/Payment-Terms clause categories simultaneously - worth considering as a cross-cutting 'combined loan+labor obligation' detection pattern in your risk engine, not just a single clause-category rule.",
+    "risk_engine_layer_recommendation": "Deterministic layer for the clearest cases (explicit 'work off the debt' language), but likely needs ML/pattern layer support for subtler framing, since exploitative documents rarely use the words 'bonded labour' outright."
+  }
+]

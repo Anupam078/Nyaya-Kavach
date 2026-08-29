@@ -1,0 +1,14 @@
+[
+  {
+    "provision_id": "osh-code-2020-contract-labour-applicability",
+    "act_name": "Occupational Safety, Health and Working Conditions Code, 2020 (Act No. 37 of 2020) - replaces Contract Labour (Regulation & Abolition) Act 1970, Factories Act 1948, Inter-State Migrant Workmen Act 1979, and 10 other laws",
+    "section_number": "Contract labour provisions (threshold raised from 20 to 50 workers)",
+    "raw_text": null,
+    "simplified_text": "This law (in force since 21 November 2025, replacing the old Contract Labour Act) requires registration, licensing, and welfare facilities (canteens, restrooms, first aid, appointment letters) - but ONLY for employers or contractors dealing with 50 or more contract workers at once (raised from 20 under the old law). A single farmer or small household hiring one or two laborers is still NOT covered by these specific registration/licensing requirements - if anything, this is now even more true than before, since the threshold went up.",
+    "jurisdiction": "India (Central Act)",
+    "source_url": "https://www.lexology.com/library/detail.aspx?g=b3ba50cd-c9a7-467b-962b-51d8949b636b",
+    "verification_status": "VERIFIED_FROM_SECONDARY_LEGAL_ANALYSIS",
+    "note": "CORRECTED ENTRY (see superseded-notice below). The Contract Labour (Regulation and Abolition) Act, 1970 was repealed effective 21 November 2025 and folded into the OSH Code, 2020. IMPORTANT ADDITIONAL FINDING: the Inter-State Migrant Workmen Act, 1979 was ALSO repealed by this same Code, and at least one labor-advocacy source argues its specific protections (displacement allowance, journey allowance, mandatory contractor registration for migrant workers) were not fully carried forward into the OSH Code. This matters for MP specifically, since inter-state and inter-district migrant agricultural/construction labor is common. Worth a dedicated look at OSH Code's migrant worker provisions (Chapter on Inter-State Migrant Workers) before assuming full continuity of protection.",
+    "risk_engine_layer_recommendation": "Low priority for MVP given the persona (individual small-employer contracts almost never hit the 50-worker threshold). Keep this entry mainly for the minority of documents involving a labor contractor supplying workers to a larger site, and flag any migrant-worker document for a closer look given the unresolved protection gap noted above."
+  }
+]

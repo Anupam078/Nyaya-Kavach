@@ -1,0 +1,24 @@
+[
+  {
+    "provision_id": "usurious-loans-1918-s3-reopening",
+    "act_name": "The Usurious Loans Act, 1918 (Act No. 10 of 1918)",
+    "section_number": "3",
+    "raw_text": "Notwithstanding anything in the Indian Contract Act, 1872, where in any suit... the Court has reason to believe that the interest is excessive, and that the transaction was, as between the parties thereto, substantially unfair, the Court may reopen the transaction, take an account between the parties, and relieve the debtor of all liability in respect of any excessive interest; and may set aside, revise, or alter any security given or agreement made in respect of the loan.",
+    "simplified_text": "If a loan's interest rate is unusually high AND the deal was unfair to the borrower, a court can step in, recalculate what's actually owed, cancel the excess interest, and even change or cancel the security/collateral terms. There is no single fixed percentage that defines 'excessive' - courts look at the full picture: was there collateral, what was the borrower's financial situation, was interest compounded, and what did the lender actually risk. A very high rate is a strong warning sign, but it's the overall fairness of the deal that matters legally.",
+    "jurisdiction": "India (Central Act, applies in Madhya Pradesh alongside state Moneylenders Act)",
+    "source_url": "https://indiankanoon.org/doc/1789632/",
+    "verification_status": "VERIFIED_FROM_BARE_ACT_TEXT",
+    "risk_engine_layer_recommendation": "ML/soft-pattern layer - no fixed numeric threshold in this provision, requires contextual judgment"
+  },
+  {
+    "provision_id": "usurious-loans-1918-s3-2-excessive-factors",
+    "act_name": "The Usurious Loans Act, 1918 (Act No. 10 of 1918)",
+    "section_number": "3(2)",
+    "raw_text": "In considering whether interest is excessive under this section, the Court shall take into account any amounts charged for expenses, inquiries, fines, bonuses, premia, renewals, or other charges, and if compound interest is charged, the periods at which it is calculated, and the total advantage which may reasonably be taken to have been expected from the transaction. The Court shall also consider the presence or absence of security, its value, the debtor's financial condition, and the debtor's prior loan history known to the creditor.",
+    "simplified_text": "When deciding if a loan's interest is too high, courts look at more than just the percentage rate: hidden fees, fines, bonuses charged on top, how often compound interest is added, whether the loan had any collateral, and how well-off the borrower was at the time. A clause with heavy add-on fees or frequently compounding interest and no collateral is a stronger risk signal than a plain high rate alone.",
+    "jurisdiction": "India (Central Act)",
+    "source_url": "https://indiankanoon.org/doc/1789632/",
+    "verification_status": "VERIFIED_FROM_BARE_ACT_TEXT",
+    "risk_engine_layer_recommendation": "ML/soft-pattern layer - these are input features/signals for the classifier, not hard thresholds"
+  }
+]

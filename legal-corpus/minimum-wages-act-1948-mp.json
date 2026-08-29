@@ -1,0 +1,25 @@
+[
+  {
+    "provision_id": "code-on-wages-2019-universal-coverage",
+    "act_name": "Code on Wages, 2019 (replaces Minimum Wages Act 1948, Payment of Wages Act 1936, Payment of Bonus Act 1965, Equal Remuneration Act 1976)",
+    "section_number": "Section 5",
+    "raw_text": null,
+    "simplified_text": "As of this Code (in force since 21 November 2025), every employee in every industry is legally entitled to at least the minimum wage for their skill level and area - the old restriction to only certain listed 'scheduled employments' has been removed. This is actually good news for informal rural labor: previously, if someone's job wasn't on the government's specific list, minimum wage law might not have applied to them at all. Now it applies universally.",
+    "jurisdiction": "India (Central Act), operationalised via Madhya Pradesh Code on Wages Rules, 2026",
+    "source_url": "https://commoner-law.com/india/workers-rights/minimum-wages",
+    "verification_status": "PARTIALLY_VERIFIED_SECONDARY_SOURCE",
+    "note": "CORRECTED ENTRY (see superseded-notice below). The Minimum Wages Act, 1948 was repealed effective 21 November 2025, folded into the Code on Wages, 2019. Madhya Pradesh has notified its own Code on Wages Rules, 2026. Universal coverage (no more 'scheduled employment' gatekeeping) is a genuinely useful simplification for this product - fewer edge cases to handle."
+  },
+  {
+    "provision_id": "code-on-wages-2019-mp-wage-rate-apr2026",
+    "act_name": "Code on Wages, 2019 + Madhya Pradesh Code on Wages Rules, 2026",
+    "section_number": "State wage notification effective 1 April 2026 - 30 September 2026 (issued under the new Code framework, not the old Act)",
+    "raw_text": null,
+    "simplified_text": "For the period April-September 2026: unskilled workers in MP are entitled to roughly Rs 12,150/month, semi-skilled approximately Rs 13,421/month, skilled approximately Rs 15,144/month, highly skilled approximately Rs 16,494/month (exact per-category figures vary further by geographic zone - metro/urban/rural - which was not fully confirmed here). If a labor contract's wage terms fall below the applicable figure for that worker's skill and zone, that is a checkable violation under Section 45(2) of the Code on Wages, 2019 (underpayment claim provision, confirmed present in the MP Rules).",
+    "jurisdiction": "Madhya Pradesh",
+    "source_url": "https://www.lawrbit.com/wp-content/uploads/2026/01/madhya-pradesh-code-on-wages-rules-2026.pdf",
+    "verification_status": "PARTIALLY_VERIFIED_SECONDARY_SOURCE",
+    "note": "TIME SENSITIVITY UNCHANGED FROM BEFORE: this VDA-driven figure is revised twice yearly (April/October) and this specific number expires 30 Sept 2026. Additionally NEW open item: rates vary by geographic Zone A/B/C (metro/urban/rural) - the figures above are approximate state averages, not zone-specific. Before hardcoding into the risk engine, confirm (1) the exact zone-specific rate applicable to rural MP documents specifically (rural = likely Zone C, generally the lowest tier), and (2) build the refresh process mentioned before, now pointed at the Code on Wages Rules rather than the old Act.",
+    "risk_engine_layer_recommendation": "Deterministic rules layer - IF wage_terms < applicable_zone_and_skill_minimum: HIGH_RISK. Must be a config value tied to zone + skill + revision date, not a single constant."
+  }
+]

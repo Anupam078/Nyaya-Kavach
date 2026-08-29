@@ -1,0 +1,13 @@
+[
+  {
+    "provision_id": "mp-land-revenue-1959-s165-6-tribal-land-transfer",
+    "act_name": "Madhya Pradesh Land Revenue Code, 1959",
+    "section_number": "165(6) and 165(6-a)",
+    "raw_text": "A Bhumiswami belonging to an aboriginal tribe shall not transfer his rights in land situated in a Scheduled Area to a person not belonging to such tribe without the prior permission in writing of a Revenue Officer not below the rank of Collector, for reasons to be recorded in writing.",
+    "simplified_text": "If the land in this document belongs to a tribal (Adivasi) landholder in a designated Scheduled Area, that person generally cannot sell or transfer it to a non-tribal person without written permission from the Collector (a senior district official). This protection exists because tribal land has historically been taken through unfair deals. If a land document involves a tribal landholder giving up land or long-term rights to a non-tribal party, and there's no mention of Collector permission, that's a significant red flag worth checking carefully.",
+    "jurisdiction": "Madhya Pradesh (Scheduled Areas specifically)",
+    "source_url": "https://indiankanoon.org/doc/31903436/",
+    "verification_status": "PARTIALLY_VERIFIED_NEEDS_LEGAL_REVIEW",
+    "note": "IMPORTANT NUANCE: case law indicates the word 'otherwise' in this section has been interpreted to exclude ordinary leases (i.e., leasing tribal land to a non-tribal may NOT require the same permission as an outright sale/transfer, per at least one High Court reading), while sales/loan-linked transfers do require it. This distinction is legally contested and was subject to a Supreme Court ruling as recently as April 2025 (State of MP vs Dinesh Kumar). DO NOT hardcode 'any tribal land lease = violation' as a rule - this needs a law student/advisor to confirm the current, settled interpretation before going into the deterministic rules layer. Safer initial approach: flag any land document involving a tribal party for human review rather than auto-classifying it as compliant or non-compliant."
+  }
+]

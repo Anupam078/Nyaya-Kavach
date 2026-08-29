@@ -1,0 +1,54 @@
+[
+  {
+    "provision_id": "mp-moneylenders-1934-voucher-requirement",
+    "act_name": "Madhya Pradesh Money-Lenders Act, 1934",
+    "section_number": "4 (voucher requirement)",
+    "raw_text": "Every moneylender shall, on advancing a loan to a debtor, forthwith deliver to the debtor a voucher under his signature evidencing the transaction of loan, containing sufficient description of any movable or immovable property pledged or mortgaged, the rate of interest chargeable on the loan, and acknowledgement of delivery of any pledged movable property.",
+    "simplified_text": "If someone lends you money, they must immediately give you a signed paper (voucher) that clearly states the interest rate, describes anything you pledged as security, and confirms they received it. If your loan document is missing this information, the lender may not have followed the law.",
+    "jurisdiction": "Madhya Pradesh",
+    "source_url": "https://indiankanoon.org/doc/123708485/",
+    "verification_status": "VERIFIED_FROM_BARE_ACT_TEXT"
+  },
+  {
+    "provision_id": "mp-moneylenders-1934-registration-required",
+    "act_name": "Madhya Pradesh Money-Lenders Act, 1934",
+    "section_number": "11 (registration requirement)",
+    "raw_text": "No suit for the recovery of a loan advanced by a moneylender shall proceed in a Civil Court until the Court is satisfied that he holds a valid registration certificate or that he is not required to have a registration certificate.",
+    "simplified_text": "A moneylender must hold a valid government registration certificate. If they don't have one, they legally cannot even sue you in court to recover the loan. If the person who lent you money isn't registered, that itself is a serious problem with the loan's legitimacy - not just the interest rate.",
+    "jurisdiction": "Madhya Pradesh",
+    "source_url": "https://indiankanoon.org/doc/123708485/",
+    "verification_status": "VERIFIED_FROM_BARE_ACT_TEXT"
+  },
+  {
+    "provision_id": "mp-moneylenders-2020-interest-cap-mechanism",
+    "act_name": "Madhya Pradesh Moneylenders (Amendment) Act, 2020 (Act No. 16 of 2020)",
+    "section_number": "Section 2-B (inserted by Section 3 of the 2020 Amendment)",
+    "raw_text": "No moneylender shall charge interest more than the rate notified by the State Government from time to time.",
+    "simplified_text": "Since 2020, a moneylender in Madhya Pradesh cannot charge more interest than a rate that the State Government sets and publishes in an official notification. Important: the maximum percentage is NOT written in this Act itself - the Act just says the government will announce it, and can change it over time. To know today's actual maximum interest rate, you need to find the CURRENT government notification issued under this section, not just this Act.",
+    "jurisdiction": "Madhya Pradesh",
+    "source_url": "user-provided bare act text (MP Act No. 16 of 2020)",
+    "verification_status": "MECHANISM_VERIFIED_RATE_STILL_UNCONFIRMED",
+    "note": "CORRECTED UNDERSTANDING (previous version of this entry incorrectly assumed a fixed percentage existed in the Act itself). The actual legal structure is a delegated/notified rate under Section 2-B, re-settable by the State Government 'from time to time' without needing another amendment Act. This is BOTH good and bad news for the project: bad because there's no single fixed number to hardcode long-term; good because it's a well-defined, narrow thing to search for (a specific government notification under Section 2-B), rather than an ambiguous legislative provision. STILL NEEDS: the actual current notified percentage, which was not found via web search (likely requires the MP Gazette notification directly, an RTI request, or a legal database like SCC Online/Manupatra with full-text notification search)."
+  },
+  {
+    "provision_id": "mp-moneylenders-2020-registration-plus-cap-compliance",
+    "act_name": "Madhya Pradesh Moneylenders (Amendment) Act, 2020 (Act No. 16 of 2020)",
+    "section_number": "Section 11-FF (inserted by Section 4 of the 2020 Amendment)",
+    "raw_text": "Notwithstanding anything contained in any other law for the time being in force, any loan advanced to any person by a moneylender not registered under section 11-B shall not be recoverable in any court of law unless at the time of filing the suit the moneylender held an effective registration and the court is satisfied that the loans advanced were in compliance with Section 2-B.",
+    "simplified_text": "This strengthens the older registration rule: a moneylender can only recover a loan through court if (1) they are properly registered AND (2) the interest they charged complied with the government's notified maximum rate (Section 2-B). Both conditions must be met - being registered is not enough if the interest rate was too high.",
+    "jurisdiction": "Madhya Pradesh",
+    "source_url": "user-provided bare act text (MP Act No. 16 of 2020)",
+    "verification_status": "VERIFIED_FROM_BARE_ACT_TEXT"
+  },
+  {
+    "provision_id": "mp-moneylenders-2020-nbfc-exclusion",
+    "act_name": "Madhya Pradesh Moneylenders (Amendment) Act, 2020 (Act No. 16 of 2020)",
+    "section_number": "Section 2, clause (vii), sub-clause (da) (inserted by Section 2 of the 2020 Amendment)",
+    "raw_text": "A loan advanced by a 'non-banking financial company' as defined in Section 45-I(f) of the Reserve Bank of India Act, 1934, is excluded from the definition covered by this Act.",
+    "simplified_text": "Loans from registered NBFCs (formal finance companies regulated by the RBI) are NOT covered by this Act at all - they fall under RBI's separate regulatory framework instead. This Act only governs informal, individual moneylenders and similar unlicensed lenders.",
+    "jurisdiction": "Madhya Pradesh",
+    "source_url": "user-provided bare act text (MP Act No. 16 of 2020)",
+    "verification_status": "VERIFIED_FROM_BARE_ACT_TEXT",
+    "note": "CONFIRMS earlier scoping decision: RBI rules are a genuinely separate track from the informal moneylending your product targets, and this Act's own text draws that exact line. Good validation, not just a design assumption."
+  }
+]

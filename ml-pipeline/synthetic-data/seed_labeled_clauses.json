@@ -1,0 +1,334 @@
+[
+  {
+    "clause_id": "loan-chit-01-compliant-english-c4",
+    "text": "Interest rate: As per the rate notified by the State Government, per annum.",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "interest_finance_terms",
+    "risk_label": "low",
+    "related_provision_ids": [
+      "mp-moneylenders-2020-interest-cap-mechanism"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Interest tied to the notified rate, as the law requires."
+  },
+  {
+    "clause_id": "loan-chit-01-compliant-hindi-c4",
+    "text": "ब्याज दर: राज्य सरकार द्वारा अधिसूचित दर के अनुसार, प्रति वर्ष।",
+    "language": "hi",
+    "doc_type": "loan_chit",
+    "clause_category": "interest_finance_terms",
+    "risk_label": "low",
+    "related_provision_ids": [
+      "mp-moneylenders-2020-interest-cap-mechanism"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Hindi equivalent of the compliant interest clause."
+  },
+  {
+    "clause_id": "loan-chit-02-highrisk-english-c4",
+    "text": "Whatever interest Natthu Seth says, that must be paid.",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "interest_finance_terms",
+    "risk_label": "high",
+    "related_provision_ids": [
+      "mp-moneylenders-2020-interest-cap-mechanism",
+      "usurious-loans-1918-s3-reopening"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Undefined, lender-controlled interest - violates the notified-rate requirement and is a textbook 'harsh and unconscionable' pattern."
+  },
+  {
+    "clause_id": "loan-chit-02-highrisk-hindi-c4",
+    "text": "ब्याज नत्थू सेठ जो बोलेगा वो देना पड़ेगा।",
+    "language": "hi",
+    "doc_type": "loan_chit",
+    "clause_category": "interest_finance_terms",
+    "risk_label": "high",
+    "related_provision_ids": [
+      "mp-moneylenders-2020-interest-cap-mechanism",
+      "usurious-loans-1918-s3-reopening"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Hindi equivalent of the undefined-interest high-risk clause."
+  },
+  {
+    "clause_id": "loan-chit-01-compliant-english-c5",
+    "text": "Repayment period: 1 year, until 15 June 2027.",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "principal_repayment_schedule",
+    "risk_label": "low",
+    "related_provision_ids": [],
+    "source": "author_constructed_bootstrap",
+    "notes": "Clear, fixed repayment period."
+  },
+  {
+    "clause_id": "loan-chit-02-highrisk-english-c2",
+    "text": "I, Kaluram, resident of Semri village, have taken Rs. 5,000 from Natthu Seth.",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "principal_repayment_schedule",
+    "risk_label": "low",
+    "related_provision_ids": [],
+    "source": "author_constructed_bootstrap",
+    "notes": "The amount itself isn't the violation here - the missing voucher (separate chunk) is. Keep this one low to avoid conflating two different risk signals into one label."
+  },
+  {
+    "clause_id": "loan-chit-02-highrisk-english-c3",
+    "text": "If I cannot pay the money back, my son will work on Natthu Seth's farm until the full amount is paid off.",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "penalty_default_consequences",
+    "risk_label": "high",
+    "related_provision_ids": [
+      "bonded-labour-1976-core-prohibition"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Work-off-debt clause involving the borrower's son - matches the Bonded Labour Act's core prohibition."
+  },
+  {
+    "clause_id": "loan-chit-02-highrisk-hindi-c3",
+    "text": "पैसा वापस नहीं कर पाया तो मेरा बेटा नत्थू सेठ के खेत में काम करेगा जब तक पैसा पूरा नहीं चुक जाता।",
+    "language": "hi",
+    "doc_type": "loan_chit",
+    "clause_category": "penalty_default_consequences",
+    "risk_label": "high",
+    "related_provision_ids": [
+      "bonded-labour-1976-core-prohibition"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Hindi equivalent of the bonded-labor penalty clause."
+  },
+  {
+    "clause_id": "labor-contract-02-highrisk-english-c3",
+    "text": "Raju must pay this money back by working.",
+    "language": "en",
+    "doc_type": "labor_contract",
+    "clause_category": "penalty_default_consequences",
+    "risk_label": "high",
+    "related_provision_ids": [
+      "bonded-labour-1976-core-prohibition"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Same bonded-labor pattern, but originating in a labor contract rather than a loan chit - useful for teaching the model this pattern isn't tied to one doc_type."
+  },
+  {
+    "clause_id": "labor-contract-02-highrisk-english-c4",
+    "text": "Until the money is fully repaid, Raju cannot work anywhere else besides the kiln.",
+    "language": "en",
+    "doc_type": "labor_contract",
+    "clause_category": "penalty_default_consequences",
+    "risk_label": "high",
+    "related_provision_ids": [
+      "bonded-labour-1976-core-prohibition"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Restraint on leaving the job until debt is repaid - a defining feature of bonded labor, not just low pay."
+  },
+  {
+    "clause_id": "land-lease-01-compliant-batai-english-c6",
+    "text": "Duration: 1 crop season (Kharif 2026).",
+    "language": "en",
+    "doc_type": "land_lease",
+    "clause_category": "duration_term",
+    "risk_label": "low",
+    "related_provision_ids": [],
+    "source": "author_constructed_bootstrap",
+    "notes": "Standard single-season Batai duration."
+  },
+  {
+    "clause_id": "land-lease-01-compliant-batai-hindi-c6",
+    "text": "अवधि: १ फसल सीजन (खरीफ २०२६)।",
+    "language": "hi",
+    "doc_type": "land_lease",
+    "clause_category": "duration_term",
+    "risk_label": "low",
+    "related_provision_ids": [],
+    "source": "author_constructed_bootstrap",
+    "notes": "Hindi equivalent."
+  },
+  {
+    "clause_id": "labor-contract-01-compliant-english-c3",
+    "text": "Work: Weeding and field work, for 3 months (July-September 2026).",
+    "language": "en",
+    "doc_type": "labor_contract",
+    "clause_category": "duration_term",
+    "risk_label": "low",
+    "related_provision_ids": [],
+    "source": "author_constructed_bootstrap",
+    "notes": "Fixed 3-month work duration, clearly stated."
+  },
+  {
+    "clause_id": "labor-contract-01-compliant-english-c4",
+    "text": "Wage: Rs. 470 per day, paid weekly.",
+    "language": "en",
+    "doc_type": "labor_contract",
+    "clause_category": "wage_payment_terms",
+    "risk_label": "low",
+    "related_provision_ids": [
+      "code-on-wages-2019-mp-wage-rate-apr2026"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Wage matches the current MP notified rate."
+  },
+  {
+    "clause_id": "labor-contract-01-compliant-hindi-c4",
+    "text": "मजदूरी: प्रतिदिन ४७० रुपये, हर सप्ताह भुगतान।",
+    "language": "hi",
+    "doc_type": "labor_contract",
+    "clause_category": "wage_payment_terms",
+    "risk_label": "low",
+    "related_provision_ids": [
+      "code-on-wages-2019-mp-wage-rate-apr2026"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Hindi equivalent."
+  },
+  {
+    "clause_id": "labor-contract-02-highrisk-english-c5",
+    "text": "Wage: Rs. 200 per day (deducted from the advance).",
+    "language": "en",
+    "doc_type": "labor_contract",
+    "clause_category": "wage_payment_terms",
+    "risk_label": "high",
+    "related_provision_ids": [
+      "code-on-wages-2019-mp-wage-rate-apr2026"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Rs 200/day is well below the notified minimum, and it's being deducted from an advance rather than paid outright."
+  },
+  {
+    "clause_id": "labor-contract-02-highrisk-hindi-c5",
+    "text": "मजदूरी: प्रति दिन २०० रुपये (पेशगी में से कटेगी)।",
+    "language": "hi",
+    "doc_type": "labor_contract",
+    "clause_category": "wage_payment_terms",
+    "risk_label": "high",
+    "related_provision_ids": [
+      "code-on-wages-2019-mp-wage-rate-apr2026"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Hindi equivalent of the underpaid-wage clause."
+  },
+  {
+    "clause_id": "labor-contract-01-compliant-english-c5",
+    "text": "Working hours: 7 AM to 3 PM, with a 1-hour break.",
+    "language": "en",
+    "doc_type": "labor_contract",
+    "clause_category": "working_hours_conditions",
+    "risk_label": "low",
+    "related_provision_ids": [],
+    "source": "author_constructed_bootstrap",
+    "notes": "Reasonable hours with a break."
+  },
+  {
+    "clause_id": "labor-contract-02-highrisk-english-c6",
+    "text": "Working hours: 5 AM to 7 PM.",
+    "language": "en",
+    "doc_type": "labor_contract",
+    "clause_category": "working_hours_conditions",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "author_constructed_bootstrap",
+    "notes": "14-hour workday. NOTE: the legal-corpus does not currently have a provision specifically capping working hours - this is a genuine gap worth adding (likely under the OSH Code 2020) before this category can cite a specific law in the RAG step."
+  },
+  {
+    "clause_id": "land-lease-01-compliant-batai-english-c4",
+    "text": "Gopal Patel gives his 3 acres of land (Khasra No. 123/2) to Dinesh Kumar for cultivation.",
+    "language": "en",
+    "doc_type": "land_lease",
+    "clause_category": "ownership_transfer",
+    "risk_label": "low",
+    "related_provision_ids": [],
+    "source": "author_constructed_bootstrap",
+    "notes": "Ordinary cultivation arrangement, no red flags."
+  },
+  {
+    "clause_id": "land-lease-02-highrisk-tribal-english-c2",
+    "text": "Budhni Bai, a tribal woman, of Kalapani village, gives her 2 acres of land (which is registered as Bhumiswami in her late husband's name) to Ramesh Agarwal for 10 years, in exchange for a lump sum of Rs. 15,000.",
+    "language": "en",
+    "doc_type": "land_lease",
+    "clause_category": "ownership_transfer",
+    "risk_label": "high",
+    "related_provision_ids": [
+      "mp-land-revenue-1959-s165-6-tribal-land-transfer"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Tribal landholder, long-term (10yr) transfer bundled with a lump sum - the lease/sale distinction is legally contested per the corpus note, so this should route to human review, not an automatic verdict."
+  },
+  {
+    "clause_id": "land-lease-02-highrisk-tribal-hindi-c2",
+    "text": "बुधनी बाई, आदिवासी, ग्राम कालापानी, अपनी २ एकड़ जमीन (जो उसके पति के नाम पर भूमिस्वामी है) रमेश अग्रवाल को १० साल के लिए देती है, बदले में १५,००० रुपये एकमुश्त लेकर।",
+    "language": "hi",
+    "doc_type": "land_lease",
+    "clause_category": "ownership_transfer",
+    "risk_label": "high",
+    "related_provision_ids": [
+      "mp-land-revenue-1959-s165-6-tribal-land-transfer"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Hindi equivalent of the tribal land transfer clause."
+  },
+  {
+    "clause_id": "loan-chit-01-compliant-english-c6",
+    "text": "Collateral: No property has been pledged.",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "security_collateral_pledge",
+    "risk_label": "low",
+    "related_provision_ids": [],
+    "source": "author_constructed_bootstrap",
+    "notes": "Explicitly no collateral pledged - clean and clear."
+  },
+  {
+    "clause_id": "loan-chit-01-compliant-english-c7",
+    "text": "Suresh Sahukar has given me this signed voucher, clearly stating the interest rate and terms.",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "mandatory_disclosure_documentation",
+    "risk_label": "low",
+    "related_provision_ids": [
+      "mp-moneylenders-1934-voucher-requirement"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "Voucher requirement satisfied."
+  },
+  {
+    "clause_id": "loan-chit-02-highrisk-english-c5",
+    "text": "I did not receive any paper for this money.",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "mandatory_disclosure_documentation",
+    "risk_label": "high",
+    "related_provision_ids": [
+      "mp-moneylenders-1934-voucher-requirement",
+      "mp-moneylenders-1934-registration-required"
+    ],
+    "source": "author_constructed_bootstrap",
+    "notes": "No voucher at all - a direct violation, and grounds to doubt the lender is even registered."
+  },
+  {
+    "clause_id": "loan-chit-01-compliant-english-c1",
+    "text": "RECEIPT",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "other_uncategorized",
+    "risk_label": "not_applicable",
+    "related_provision_ids": [],
+    "source": "author_constructed_bootstrap",
+    "notes": "Document title/header, not a substantive clause."
+  },
+  {
+    "clause_id": "loan-chit-01-compliant-english-c9",
+    "text": "Signature - Ramlal (Borrower) Signature - Suresh Sahukar (Lender)",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "other_uncategorized",
+    "risk_label": "not_applicable",
+    "related_provision_ids": [],
+    "source": "author_constructed_bootstrap",
+    "notes": "Signature block, administrative not substantive."
+  }
+]

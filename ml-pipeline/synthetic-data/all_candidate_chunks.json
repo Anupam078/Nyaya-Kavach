@@ -1,0 +1,632 @@
+[
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-english.txt",
+    "chunk_index": 1,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "LABOR CONTRACT"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-english.txt",
+    "chunk_index": 2,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "Employer: Mahesh Kisan, Rehti village Worker: Sita Bai, Rehti village"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-english.txt",
+    "chunk_index": 3,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "Work: Weeding and field work, for 3 months (July-September 2026)."
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-english.txt",
+    "chunk_index": 4,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "Wage: Rs. 470 per day, paid weekly."
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-english.txt",
+    "chunk_index": 5,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "Working hours: 7 AM to 3 PM, with a 1-hour break."
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-english.txt",
+    "chunk_index": 6,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "This wage is in line with the minimum wage rate set by the Madhya Pradesh government."
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-english.txt",
+    "chunk_index": 7,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "Signature - Mahesh Kisan Signature - Sita Bai"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-hindi.txt",
+    "chunk_index": 1,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "मजदूरी अनुबंध"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-hindi.txt",
+    "chunk_index": 2,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "नियोक्ता: महेश किसान, ग्राम रेहटी मजदूर: सीता बाई, ग्राम रेहटी"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-hindi.txt",
+    "chunk_index": 3,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "काम: खेत में निराई-गुड़ाई का काम, ३ महीने के लिए (जुलाई-सितंबर २०२६)।"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-hindi.txt",
+    "chunk_index": 4,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "मजदूरी: प्रतिदिन ४७० रुपये, हर सप्ताह भुगतान।"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-hindi.txt",
+    "chunk_index": 5,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "काम के घंटे: सुबह ७ बजे से दोपहर ३ बजे तक, बीच में १ घंटे का आराम।"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-hindi.txt",
+    "chunk_index": 6,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "यह मजदूरी मध्य प्रदेश सरकार द्वारा तय न्यूनतम मजदूरी दर के अनुसार है।"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-01-compliant-hindi.txt",
+    "chunk_index": 7,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "हस्ताक्षर - महेश किसान हस्ताक्षर - सीता बाई"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-english.txt",
+    "chunk_index": 1,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "WORK TERMS"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-english.txt",
+    "chunk_index": 2,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "Banshi Thekedar gave Raju an advance of Rs. 3,000 for work at the brick kiln."
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-english.txt",
+    "chunk_index": 3,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "Raju must pay this money back by working."
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-english.txt",
+    "chunk_index": 4,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "Until the money is fully repaid, Raju cannot work anywhere else besides the kiln."
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-english.txt",
+    "chunk_index": 5,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "Wage: Rs. 200 per day (deducted from the advance)."
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-english.txt",
+    "chunk_index": 6,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "Working hours: 5 AM to 7 PM."
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-english.txt",
+    "chunk_index": 7,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "No written agreement or hour limit was given to Raju."
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-english.txt",
+    "chunk_index": 8,
+    "doc_type": "labor_contract",
+    "language": "en",
+    "text": "Thumbprint - Raju Signature - Banshi Thekedar"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-hindi.txt",
+    "chunk_index": 1,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "काम की शर्त"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-hindi.txt",
+    "chunk_index": 2,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "बंशी ठेकेदार ने राजू को ३,००० रुपये पेशगी दिए हैं ईंट भट्टे पर काम के लिए।"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-hindi.txt",
+    "chunk_index": 3,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "राजू को यह पैसा काम करके चुकाना होगा।"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-hindi.txt",
+    "chunk_index": 4,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "जब तक पैसा पूरा नहीं चुकता, राजू भट्टे से कहीं और काम नहीं कर सकता।"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-hindi.txt",
+    "chunk_index": 5,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "मजदूरी: प्रति दिन २०० रुपये (पेशगी में से कटेगी)।"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-hindi.txt",
+    "chunk_index": 6,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "काम के घंटे: सुबह ५ बजे से शाम ७ बजे तक।"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-hindi.txt",
+    "chunk_index": 7,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "कोई लिखित एग्रीमेंट या घंटे की सीमा नहीं दी गई राजू को।"
+  },
+  {
+    "source_file": "labor-contract/labor-contract-02-highrisk-hindi.txt",
+    "chunk_index": 8,
+    "doc_type": "labor_contract",
+    "language": "hi",
+    "text": "अंगूठा - राजू हस्ताक्षर - बंशी ठेकेदार"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-english.txt",
+    "chunk_index": 1,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "BATAI (CROP-SHARE) AGREEMENT"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-english.txt",
+    "chunk_index": 2,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "Date: 10 July 2026"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-english.txt",
+    "chunk_index": 3,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "Landowner: Gopal Patel, Barkheda village, Ichhawar tehsil, Sehore district Cultivator: Dinesh Kumar, Barkheda village"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-english.txt",
+    "chunk_index": 4,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "Gopal Patel gives his 3 acres of land (Khasra No. 123/2) to Dinesh Kumar for cultivation."
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-english.txt",
+    "chunk_index": 5,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "Share terms: Half the crop (50%) to the landowner, half (50%) to the cultivator."
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-english.txt",
+    "chunk_index": 6,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "Duration: 1 crop season (Kharif 2026)."
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-english.txt",
+    "chunk_index": 7,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "Seeds and fertilizer: Both parties will share the cost equally."
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-english.txt",
+    "chunk_index": 8,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "This land is not tribal land; it is general category land."
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-english.txt",
+    "chunk_index": 9,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "Both parties agreed in the presence of a witness."
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-english.txt",
+    "chunk_index": 10,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "Signature - Gopal Patel Signature - Dinesh Kumar"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-hindi.txt",
+    "chunk_index": 1,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "बटाई अनुबंध"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-hindi.txt",
+    "chunk_index": 2,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "दिनांक: १० जुलाई २०२६"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-hindi.txt",
+    "chunk_index": 3,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "भूमि स्वामी: गोपाल पटेल, ग्राम बरखेड़ा, तहसील इछावर, जिला सीहोर काश्तकार: दिनेश कुमार, ग्राम बरखेड़ा"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-hindi.txt",
+    "chunk_index": 4,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "गोपाल पटेल अपनी ३ एकड़ जमीन (खसरा नंबर १२३/२) दिनेश कुमार को खेती के लिए देते हैं।"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-hindi.txt",
+    "chunk_index": 5,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "बटाई शर्त: फसल का आधा हिस्सा (५०%) भूमि स्वामी को और आधा हिस्सा (५०%) काश्तकार को मिलेगा।"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-hindi.txt",
+    "chunk_index": 6,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "अवधि: १ फसल सीजन (खरीफ २०२६)।"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-hindi.txt",
+    "chunk_index": 7,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "बीज व खाद: दोनों पक्ष आधा-आधा खर्च वहन करेंगे।"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-hindi.txt",
+    "chunk_index": 8,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "यह जमीन आदिवासी भूमि नहीं है, सामान्य श्रेणी की भूमि है।"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-hindi.txt",
+    "chunk_index": 9,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "गवाह के सामने दोनों पक्षों ने सहमति दी।"
+  },
+  {
+    "source_file": "land-lease/land-lease-01-compliant-batai-hindi.txt",
+    "chunk_index": 10,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "हस्ताक्षर - गोपाल पटेल हस्ताक्षर - दिनेश कुमार"
+  },
+  {
+    "source_file": "land-lease/land-lease-02-highrisk-tribal-english.txt",
+    "chunk_index": 1,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "LAND PAPER"
+  },
+  {
+    "source_file": "land-lease/land-lease-02-highrisk-tribal-english.txt",
+    "chunk_index": 2,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "Budhni Bai, a tribal woman, of Kalapani village, gives her 2 acres of land (which is registered as Bhumiswami in her late husband's name) to Ramesh Agarwal for 10 years, in exchange for a lump sum of Rs. 15,000."
+  },
+  {
+    "source_file": "land-lease/land-lease-02-highrisk-tribal-english.txt",
+    "chunk_index": 3,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "Ramesh Agarwal may do whatever he wants with this land, farming or anything else."
+  },
+  {
+    "source_file": "land-lease/land-lease-02-highrisk-tribal-english.txt",
+    "chunk_index": 4,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "There is no mention of Collector's permission anywhere in this paper."
+  },
+  {
+    "source_file": "land-lease/land-lease-02-highrisk-tribal-english.txt",
+    "chunk_index": 5,
+    "doc_type": "land_lease",
+    "language": "en",
+    "text": "Thumbprint - Budhni Bai Signature - Ramesh Agarwal"
+  },
+  {
+    "source_file": "land-lease/land-lease-02-highrisk-tribal-hindi.txt",
+    "chunk_index": 1,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "जमीन का कागज"
+  },
+  {
+    "source_file": "land-lease/land-lease-02-highrisk-tribal-hindi.txt",
+    "chunk_index": 2,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "बुधनी बाई, आदिवासी, ग्राम कालापानी, अपनी २ एकड़ जमीन (जो उसके पति के नाम पर भूमिस्वामी है) रमेश अग्रवाल को १० साल के लिए देती है, बदले में १५,००० रुपये एकमुश्त लेकर।"
+  },
+  {
+    "source_file": "land-lease/land-lease-02-highrisk-tribal-hindi.txt",
+    "chunk_index": 3,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "रमेश अग्रवाल इस जमीन पर जो चाहे कर सकता है, खेती या और कुछ।"
+  },
+  {
+    "source_file": "land-lease/land-lease-02-highrisk-tribal-hindi.txt",
+    "chunk_index": 4,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "कलेक्टर की अनुमति का कोई जिक्र नहीं है इस कागज में।"
+  },
+  {
+    "source_file": "land-lease/land-lease-02-highrisk-tribal-hindi.txt",
+    "chunk_index": 5,
+    "doc_type": "land_lease",
+    "language": "hi",
+    "text": "अंगूठा - बुधनी बाई हस्ताक्षर - रमेश अग्रवाल"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-english.txt",
+    "chunk_index": 1,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "RECEIPT"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-english.txt",
+    "chunk_index": 2,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "Date: 15 June 2026"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-english.txt",
+    "chunk_index": 3,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "I, Ramlal son of Shyamlal, resident of Khajuri village, Budhni tehsil, Sehore district, hereby write that I have borrowed Rs. 10,000 (ten thousand rupees) from Suresh Sahukar (License No. MPML-2024-0847), resident of the same village."
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-english.txt",
+    "chunk_index": 4,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "Interest rate: As per the rate notified by the State Government, per annum."
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-english.txt",
+    "chunk_index": 5,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "Repayment period: 1 year, until 15 June 2027."
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-english.txt",
+    "chunk_index": 6,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "Collateral: No property has been pledged."
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-english.txt",
+    "chunk_index": 7,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "Suresh Sahukar has given me this signed voucher, clearly stating the interest rate and terms."
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-english.txt",
+    "chunk_index": 8,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "Witness: Mohanlal, resident of Khajuri"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-english.txt",
+    "chunk_index": 9,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "Signature - Ramlal (Borrower) Signature - Suresh Sahukar (Lender)"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-hindi.txt",
+    "chunk_index": 1,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "रसीद"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-hindi.txt",
+    "chunk_index": 2,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "दिनांक: १५ जून २०२६"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-hindi.txt",
+    "chunk_index": 3,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "मैं, रामलाल पिता श्यामलाल, निवासी ग्राम खजुरी, तहसील बुधनी, जिला सीहोर, यह लिखकर देता हूं कि मैंने सुरेश साहूकार (लाइसेंस क्रमांक MPML-2024-0847), निवासी वही गांव, से रुपये १०,००० (दस हजार रुपये) उधार लिए हैं।"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-hindi.txt",
+    "chunk_index": 4,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "ब्याज दर: राज्य सरकार द्वारा अधिसूचित दर के अनुसार, प्रति वर्ष।"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-hindi.txt",
+    "chunk_index": 5,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "चुकाने की अवधि: १ वर्ष, दिनांक १५ जून २०२७ तक।"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-hindi.txt",
+    "chunk_index": 6,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "गिरवी: कोई संपत्ति गिरवी नहीं रखी गई है।"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-hindi.txt",
+    "chunk_index": 7,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "सुरेश साहूकार ने मुझे यह रसीद अपने हस्ताक्षर सहित दी है, जिसमें ब्याज दर और शर्तें स्पष्ट रूप से लिखी हैं।"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-hindi.txt",
+    "chunk_index": 8,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "गवाह: मोहनलाल, निवासी खजुरी"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-01-compliant-hindi.txt",
+    "chunk_index": 9,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "हस्ताक्षर - रामलाल (उधार लेने वाला) हस्ताक्षर - सुरेश साहूकार (उधार देने वाला)"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-english.txt",
+    "chunk_index": 1,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "NOTE"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-english.txt",
+    "chunk_index": 2,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "I, Kaluram, resident of Semri village, have taken Rs. 5,000 from Natthu Seth."
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-english.txt",
+    "chunk_index": 3,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "If I cannot pay the money back, my son will work on Natthu Seth's farm until the full amount is paid off."
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-english.txt",
+    "chunk_index": 4,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "Whatever interest Natthu Seth says, that must be paid."
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-english.txt",
+    "chunk_index": 5,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "I did not receive any paper for this money."
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-english.txt",
+    "chunk_index": 6,
+    "doc_type": "loan_chit",
+    "language": "en",
+    "text": "Thumbprint - Kaluram"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-hindi.txt",
+    "chunk_index": 1,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "चिट्ठी"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-hindi.txt",
+    "chunk_index": 2,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "मैं कालूराम, गांव सेमरी का रहने वाला, नत्थू सेठ से ५,००० रुपये लिया है।"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-hindi.txt",
+    "chunk_index": 3,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "पैसा वापस नहीं कर पाया तो मेरा बेटा नत्थू सेठ के खेत में काम करेगा जब तक पैसा पूरा नहीं चुक जाता।"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-hindi.txt",
+    "chunk_index": 4,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "ब्याज नत्थू सेठ जो बोलेगा वो देना पड़ेगा।"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-hindi.txt",
+    "chunk_index": 5,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "कोई कागज नहीं मिला मुझे इस पैसे का।"
+  },
+  {
+    "source_file": "loan-chit/loan-chit-02-highrisk-hindi.txt",
+    "chunk_index": 6,
+    "doc_type": "loan_chit",
+    "language": "hi",
+    "text": "अंगूठा - कालूराम"
+  }
+]

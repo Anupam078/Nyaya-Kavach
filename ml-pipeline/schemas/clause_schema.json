@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nyaya-kavach/schemas/clause_schema.json",
+  "title": "LabeledClause",
+  "description": "A single labeled clause chunk. This is the shared data contract flowing through the segmenter, synthetic data generation, model fine-tuning, and the risk engine. Every stage of the ML pipeline reads or writes objects in this shape.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["clause_id", "text", "language", "doc_type", "clause_category", "risk_label", "source"],
+  "properties": {
+    "clause_id": {
+      "type": "string",
+      "description": "Unique identifier, e.g. 'loan-chit-02-highrisk-hindi-c1' (documentname + clause index)."
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The clause text exactly as it appears in the (segmented) document, in its original language."
+    },
+    "language": {
+      "type": "string",
+      "enum": ["hi", "en"],
+      "description": "BCP-47-style short code for the clause's language. Extend this enum if a third language (e.g. Malvi) is added later."
+    },
+    "doc_type": {
+      "type": "string",
+      "enum": ["loan_chit", "land_lease", "labor_contract", "other_unsupported"],
+      "description": "Which of the 3 supported MVP document types this clause came from."
+    },
+    "clause_category": {
+      "type": "string",
+      "enum": [
+        "interest_finance_terms",
+        "principal_repayment_schedule",
+        "penalty_default_consequences",
+        "duration_term",
+        "termination_notice_period",
+        "wage_payment_terms",
+        "working_hours_conditions",
+        "ownership_transfer",
+        "security_collateral_pledge",
+        "mandatory_disclosure_documentation",
+        "dispute_resolution",
+        "renewal_auto_renewal",
+        "other_uncategorized"
+      ],
+      "description": "Exactly one of the 13 taxonomy tags. Single-label by design (matches roadmap's 'Sequence Classification' framing) - do not add multi-label support without revisiting the fine-tuning approach."
+    },
+    "risk_label": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "not_applicable"],
+      "description": "Soft risk signal for this specific clause instance, independent of its category. 'not_applicable' is for categories where risk genuinely doesn't apply in context (e.g. a plain duration statement with nothing unusual)."
+    },
+    "related_provision_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "Optional links to provision_id values in the legal-corpus JSON files (e.g. 'bonded-labour-1976-core-prohibition'). Populated when a clause is a training example for a specific known risk pattern. This field seeds the RAG explanation step's citation trail."
+    },
+    "source": {
+      "type": "string",
+      "enum": ["author_constructed_bootstrap", "synthetic_llm_generated", "real_field_document"],
+      "description": "Provenance tag. REQUIRED and must be honest - this is how you track how much of your training data is real vs. bootstrap vs. synthetic, which matters for evaluating model reliability later."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional free-text annotator note."
+    }
+  }
+}

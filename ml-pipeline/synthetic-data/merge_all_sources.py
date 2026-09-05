@@ -5,9 +5,6 @@ Merges every labeled data source into one final training dataset:
   - synthetic_batch_gemini.json     (however many Gemini accepted, after you've
                                       run generate_via_gemini.py and reviewed
                                       review_needed_high_risk.json)
-  - synthetic_batch_ollama.json     (however many Ollama accepted, after you've
-                                      run generate_via_ollama.py and reviewed
-                                      review_needed_high_risk.json)
 
 Run this AFTER you've done the human review of the high-risk Gemini examples,
 not before - this script doesn't know which ones you actually checked.
@@ -22,7 +19,7 @@ SOURCES = [
     "seed_labeled_clauses.json",
     "synthetic_batch_01.json",
     "synthetic_batch_gemini.json",
-    "synthetic_batch_ollama.json"
+    "synthetic_batch_ollama.json",
 ]
 
 

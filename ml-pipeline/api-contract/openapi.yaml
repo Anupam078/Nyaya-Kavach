@@ -1,0 +1,171 @@
+openapi: 3.0.3
+info:
+  title: Nyaya Kavach ML Pipeline API
+  version: 0.1.0
+  description: >
+    Internal API between the Java Spring Boot backend and the Python ML
+    pipeline (Roadmap Stage 5's "Handoff API"). Java sends raw OCR text;
+    Python returns a structured risk verdict. Field names and enums here
+    are derived directly from clause_schema.py - if that file changes,
+    this spec must be updated to match, and vice versa.
+
+paths:
+  /analyze-document:
+    post:
+      summary: Analyze a document's OCR text and return a full risk verdict
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AnalyzeDocumentRequest'
+      responses:
+        '200':
+          description: Analysis complete
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RiskVerdict'
+        '422':
+          description: Document type could not be determined, or text is unsupported/unparseable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal pipeline failure (segmenter, classifier, or LLM call failed)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  schemas:
+    AnalyzeDocumentRequest:
+      type: object
+      required: [document_id, raw_text]
+      properties:
+        document_id:
+          type: string
+          format: uuid
+          description: Java-generated ID, echoed back in the response for correlation.
+        raw_text:
+          type: string
+          description: Full OCR-extracted text of the document.
+        doc_type_hint:
+          type: string
+          enum: [loan_chit, land_lease, labor_contract, other_unsupported]
+          nullable: true
+          description: >
+            OPEN QUESTION FOR THE BACKEND TEAM: does the user select document
+            type during upload (in which case Java always sends this), or
+            does the ML pipeline need to infer it? The current roadmap only
+            covers CLAUSE classification, not whole-DOCUMENT type
+            classification - if this is null, the pipeline does not yet
+            have a reliable way to infer doc_type on its own. Recommend
+            requiring user selection at upload for the MVP rather than
+            building a second classifier for this.
+        language_hint:
+          type: string
+          enum: [hi, en, mixed]
+          nullable: true
+
+    ClauseCategory:
+      type: string
+      enum:
+        - interest_finance_terms
+        - principal_repayment_schedule
+        - penalty_default_consequences
+        - duration_term
+        - termination_notice_period
+        - wage_payment_terms
+        - working_hours_conditions
+        - ownership_transfer
+        - security_collateral_pledge
+        - mandatory_disclosure_documentation
+        - dispute_resolution
+        - renewal_auto_renewal
+        - other_uncategorized
+
+    RiskLabel:
+      type: string
+      enum: [low, medium, high, not_applicable]
+
+    CitedProvision:
+      type: object
+      description: A specific law provision from legal-corpus/ that grounds a risk finding.
+      properties:
+        provision_id:
+          type: string
+          example: bonded-labour-1976-core-prohibition
+        act_name:
+          type: string
+        section_number:
+          type: string
+        summary:
+          type: string
+          description: The plain-language simplified_text from the legal-corpus JSON file.
+
+    AnalyzedClause:
+      type: object
+      properties:
+        clause_id:
+          type: string
+        text:
+          type: string
+        language:
+          type: string
+          enum: [hi, en]
+        clause_category:
+          $ref: '#/components/schemas/ClauseCategory'
+        risk_label:
+          $ref: '#/components/schemas/RiskLabel'
+        risk_source:
+          type: string
+          enum: [deterministic_rule, llm_judgment, none]
+          description: >
+            Which layer produced this verdict - the free/instant hard-threshold
+            rules layer, or the RAG+LLM layer for judgment-based cases.
+            "none" for not_applicable / administrative clauses.
+        explanation_hi:
+          type: string
+          nullable: true
+        explanation_en:
+          type: string
+          nullable: true
+        cited_provisions:
+          type: array
+          items:
+            $ref: '#/components/schemas/CitedProvision'
+
+    RiskVerdict:
+      type: object
+      properties:
+        document_id:
+          type: string
+          format: uuid
+        doc_type:
+          type: string
+          enum: [loan_chit, land_lease, labor_contract, other_unsupported]
+        overall_risk_level:
+          $ref: '#/components/schemas/RiskLabel'
+          description: The highest risk_label among all clauses, for a single dashboard-level color code.
+        clauses:
+          type: array
+          items:
+            $ref: '#/components/schemas/AnalyzedClause'
+        model_version:
+          type: string
+          description: Identifies which fine-tuned model checkpoint produced this, for debugging/reproducibility.
+        processed_at:
+          type: string
+          format: date-time
+
+    ErrorResponse:
+      type: object
+      properties:
+        error_code:
+          type: string
+          enum: [unsupported_doc_type, empty_text, pipeline_failure]
+        message:
+          type: string

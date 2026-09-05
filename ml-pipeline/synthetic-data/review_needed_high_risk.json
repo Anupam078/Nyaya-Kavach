@@ -1,0 +1,178 @@
+[
+  {
+    "clause_id": "gemini-0005",
+    "text": "मैंने धनीराम से 25,000 रुपये लिए हैं। इस पर हर महीने 10% ब्याज लगेगा। अगर पैसा समय पर नहीं दिया, तो ये ब्याज हर हफ्ते दोगुना होता जाएगा और मैं कोई आपत्ति नहीं कर सकता।",
+    "language": "hi",
+    "doc_type": "loan_chit",
+    "clause_category": "interest_finance_terms",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0006",
+    "text": "I owe Sunderlal 15,000 rupees for my father's treatment. The interest amount will be decided by Sunderlal alone, and I must pay whatever he asks. This debt can never be fully repaid unless Sunderlal gives his word.",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "interest_finance_terms",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0011",
+    "text": "मैंने अपनी पुश्तैनी 5 बीघा जमीन लल्लन को अगले 7 साल के लिए पट्टे पर दी है। इसका किराया हर फसल के बाद लल्लन तय करेगा, और मुझे उसे बिना किसी सवाल के मानना होगा।",
+    "language": "hi",
+    "doc_type": "land_lease",
+    "clause_category": "interest_finance_terms",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0012",
+    "text": "The rent for this two-acre field in Jampur will be 80% of whatever crop is produced, regardless of costs or market price. The tenant must also pay an additional 5000 rupees if the landlord thinks the harvest was excellent.",
+    "language": "en",
+    "doc_type": "land_lease",
+    "clause_category": "interest_finance_terms",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0017",
+    "text": "रामू ने मालिक से 10,000 रुपये लिए काम के लिए. इस पर हर महीने 10% ब्याज लगेगा और यह सालाना बढ़ता जाएगा. जब तक पूरा पैसा न चुकाए, तब तक रामू को मालिक के यहाँ बिना वेतन के काम करना होगा.",
+    "language": "hi",
+    "doc_type": "labor_contract",
+    "clause_category": "interest_finance_terms",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0018",
+    "text": "Worker Anil borrowed 8000 rupees for family expenses. Interest will be added as decided by Sethji at the end of each year, and will compound. Anil must work for Sethji until the full amount and all accumulated interest is paid back, no matter how many years it takes.",
+    "language": "en",
+    "doc_type": "labor_contract",
+    "clause_category": "interest_finance_terms",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0023",
+    "text": "शंकर ने 30,000 रुपये साहूकार से लिए हैं. अगर वह एक भी किस्त चूक गया या देर की, तो उसे अपनी पुश्तैनी जमीन तुरंत बेचकर पूरा कर्ज और दोगुना ब्याज चुकाना होगा, भले ही उसका दाम बहुत कम मिले.",
+    "language": "hi",
+    "doc_type": "loan_chit",
+    "clause_category": "principal_repayment_schedule",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0024",
+    "text": "Kamla took 10,000 rupees from the village merchant. She agrees to pay back the full amount, plus any interest, whenever the merchant asks for it, with only one day's notice, failing which her buffalo will be seized.",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "principal_repayment_schedule",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0029",
+    "text": "यह जमीन दो साल के लिए पट्टे पर दी गई है. अगर किराएदार किराया समय पर नहीं दे पाया, या मालिक को लगा कि काम ठीक नहीं हो रहा, तो उसकी सारी मेहनत, खेत में लगाए पेड़, और जो भी घर बनाया है, सब मालिक का हो जाएगा और उसे तुरंत जमीन खाली करनी होगी.",
+    "language": "hi",
+    "doc_type": "land_lease",
+    "clause_category": "principal_repayment_schedule",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0030",
+    "text": "Tenant Vijay will pay the land rent amount as decided by the landowner, Mr. Gupta, every harvest season. If Vijay fails to pay the exact amount demanded by Mr. Gupta at any time, he must vacate the land immediately, losing any crops planted and any improvements made.",
+    "language": "en",
+    "doc_type": "land_lease",
+    "clause_category": "principal_repayment_schedule",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0035",
+    "text": "बलवंत ने 10,000 रुपये का अग्रिम लिया है। यह अग्रिम तब तक नहीं चुकाया जाएगा जब तक वह मालिक के यहाँ मनचाहा काम नहीं करेगा। उसे यह काम छोड़कर कहीं और जाने की इजाजत नहीं होगी।",
+    "language": "hi",
+    "doc_type": "labor_contract",
+    "clause_category": "principal_repayment_schedule",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0036",
+    "text": "Ramu from Kheda village has taken an advance of Rs. 12,000. This money will be considered repaid only when he finishes all the work assigned by the owner, Bansi Lal, which may take many years. He cannot leave this work before Bansi Lal says the debt is clear.",
+    "language": "en",
+    "doc_type": "labor_contract",
+    "clause_category": "principal_repayment_schedule",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0041",
+    "text": "अगर शांति देवी अपना कर्ज़ चुकाने में नाकाम रहती है, तो उसके परिवार की ज़मीन और घर साहूकार की मिल्कियत हो जाएंगे। इसके लिए कोई और बातचीत नहीं होगी।",
+    "language": "hi",
+    "doc_type": "loan_chit",
+    "clause_category": "penalty_default_consequences",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0042",
+    "text": "If the loan amount is not repaid on time by Sunil, his entire property, including his house and cattle, will immediately become the lender's without any further notice or court order.",
+    "language": "en",
+    "doc_type": "loan_chit",
+    "clause_category": "penalty_default_consequences",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0047",
+    "text": "अगर मोहन अपनी तय ज़मीन का किराया भरने में कभी भी देरी करता है, तो उसके परिवार के एक सदस्य को अगले साल के लिए, बिना किसी भुगतान के, जब तक मालिक कहे, मालिक के खेतों में काम करना पड़ेगा. जब तक मालिक का सारा पैसा वापस नहीं मिल जाता, तब तक ज़मीन पर मोहन का कोई हक नहीं होगा.",
+    "language": "hi",
+    "doc_type": "land_lease",
+    "clause_category": "penalty_default_consequences",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  },
+  {
+    "clause_id": "gemini-0048",
+    "text": "Should Premchand fail to deliver the agreed 5 bags of paddy grain as rent from the farmland in Badlapur, his entire family's assets, including their small hut and other animals, will be transferred to the landlord, Surajbhan, until the debt is fully repaid, no matter how long it takes. There will be no questions asked about their livelihood.",
+    "language": "en",
+    "doc_type": "land_lease",
+    "clause_category": "penalty_default_consequences",
+    "risk_label": "high",
+    "related_provision_ids": [],
+    "source": "synthetic_llm_generated",
+    "notes": "Generated via Gemini API - NOT human-reviewed yet."
+  }
+]

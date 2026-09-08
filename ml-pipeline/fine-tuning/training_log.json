@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2026-09-05T23:59:00",
+    "num_examples": 207,
+    "num_train": 175,
+    "num_val": 32,
+    "eval_accuracy": 0.28125,
+    "eval_f1_macro": 0.08513591671486408,
+    "eval_loss": 2.514350175857544,
+    "note": "First successful end-to-end run. Model: google/muril-base-cased (switched from gated ai4bharat/indic-bert). Manually seeded here since this run predates the auto-logging feature."
+  }
+]

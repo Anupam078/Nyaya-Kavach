@@ -1,0 +1,27 @@
+﻿# Trained model artifacts - regenerable outputs of fine_tune_indicbert.py, not source.
+ml-pipeline/fine-tuning/indicbert-clause-classifier/
+ml-pipeline/fine-tuning/*/checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Hugging Face cache, if it ever ends up inside the repo folder by accident
+.cache/huggingface/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Secrets
+.env
+*.env
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db

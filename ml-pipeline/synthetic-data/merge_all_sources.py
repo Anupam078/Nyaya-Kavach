@@ -20,6 +20,7 @@ SOURCES = [
     "synthetic_batch_01.json",
     "synthetic_batch_gemini.json",
     "synthetic_batch_ollama.json",
+    "synthetic_batch_gemini_day2.json",
 ]
 
 

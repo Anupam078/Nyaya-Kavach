@@ -1,0 +1,16 @@
+services:
+  nyaya-kavach-db:
+    image: pgvector/pgvector:pg16
+    container_name: nyaya-kavach-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: nyaya
+      POSTGRES_PASSWORD: nyaya_dev_password
+      POSTGRES_DB: nyaya_kavach
+    ports:
+      - "5432:5432"
+    volumes:
+      - nyaya_pgdata:/var/lib/postgresql/data
+
+volumes:
+  nyaya_pgdata:

@@ -21,15 +21,24 @@ CREATE TABLE IF NOT EXISTS legal_provisions (
     updated_at          TIMESTAMPTZ DEFAULT now()
 );
 
--- Approximate nearest-neighbour index for fast cosine similarity search.
--- IVFFlat needs data in the table before it's built well, but creating it
--- empty is fine — it self-tunes as rows are added. `lists = 100` is a
--- reasonable default for a corpus this small (dozens to low hundreds of rows);
--- you would only need to raise this if the corpus grew into the thousands.
-CREATE INDEX IF NOT EXISTS legal_provisions_embedding_idx
-    ON legal_provisions
-    USING ivfflat (embedding vector_cosine_ops)
-    WITH (lists = 100);
+-- NO vector index on purpose (for now).
+-- The previous version built an IVFFlat index (lists = 100) on an EMPTY table,
+-- with a comment saying it "self-tunes as rows are added". It does not:
+-- IVFFlat computes its cluster centres once, at build time. Built on an empty
+-- table, those centres are meaningless, and with ~12-100 rows spread across 100
+-- lists a query (which probes 1 list by default) returned 0 rows for ~87% of
+-- test queries and never returned the 3 requested. pgvector itself warns about
+-- this: "ivfflat index created with little data. This will cause low recall."
+-- For a corpus this small, exact search (sequential scan) is instant and always
+-- correct. Revisit only if the corpus grows into the thousands - and then build
+-- the index AFTER loading data (or use HNSW, which does not need training data).
+DROP INDEX IF EXISTS legal_provisions_embedding_idx;
+
+-- Three corpus entries (wage rates, OSH Code) have no verbatim statute text
+-- because their source was a secondary summary, not a bare act. Storing a
+-- fake raw_text would misrepresent that, so raw_text is allowed to be NULL.
+-- Downstream code should always use simplified_text.
+ALTER TABLE legal_provisions ALTER COLUMN raw_text DROP NOT NULL;
 
 -- Keep updated_at honest on re-embeds.
 CREATE OR REPLACE FUNCTION set_updated_at()

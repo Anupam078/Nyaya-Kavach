@@ -61,7 +61,7 @@ def load_provisions(corpus_dir: Path) -> list[dict]:
             print(f"  Skipping {f.name} — expected a list of provisions, got {type(data)}")
             continue
         for entry in data:
-            missing = [k for k in ("provision_id", "act_name", "raw_text", "simplified_text") if k not in entry]
+            missing = [k for k in ("provision_id", "act_name", "simplified_text") if not entry.get(k)]
             if missing:
                 print(f"  Skipping an entry in {f.name} — missing required field(s): {missing}")
                 continue
@@ -113,7 +113,7 @@ def upsert_provisions(provisions: list[dict], db_url: str) -> None:
                         p["provision_id"],
                         p["act_name"],
                         p.get("section_number"),
-                        p["raw_text"],
+                        p.get("raw_text"),
                         p["simplified_text"],
                         p.get("jurisdiction"),
                         p.get("source_url"),

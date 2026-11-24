@@ -105,7 +105,7 @@ def _interactive(top_k: int, db_url: str):
             continue
 
         for i, r in enumerate(results, 1):
-            flag = "  [UNVERIFIED]" if r["verification_status"] == "NEEDS_MANUAL_VERIFICATION" else ""
+            flag = "" if str(r["verification_status"]).startswith("VERIFIED_FROM_BARE_ACT") else "  [NOT FULLY VERIFIED]"
             print(f"  {i}. [{r['similarity']:.3f}] {r['act_name']} §{r['section_number']}{flag}")
             print(f"     ({r['provision_id']})")
             print(f"     {r['simplified_text'][:200]}{'...' if len(r['simplified_text']) > 200 else ''}")

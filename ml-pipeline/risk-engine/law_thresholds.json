@@ -1,0 +1,33 @@
+{
+  "_readme": "Legal numbers live HERE, not in code. When a notification changes, edit this file only. The risk engine warns when today's date is past valid_to, so a stale wage floor can never silently produce a wrong verdict.",
+
+  "minimum_wage_mp_general": {
+    "valid_from": "2026-10-01",
+    "valid_to": "2027-03-31",
+    "revised": "twice a year (1 April and 1 October)",
+    "schedule": "Single statewide schedule - Madhya Pradesh has no zones (resolves the earlier zone A/B/C question).",
+    "unskilled_per_day": 484,
+    "unskilled_per_month": 12575,
+    "semi_skilled_per_day": 522,
+    "semi_skilled_per_month": 13571,
+    "skilled_per_day": 588,
+    "skilled_per_month": 15294,
+    "highly_skilled_per_day": 651,
+    "highly_skilled_per_month": 16919,
+    "vda_per_month": 3000,
+    "daily_derivation": "monthly total / 26 working days, rounded (12,575 / 26 = 483.65 -> 484)",
+    "notification_cited": "Labour Commissioner, Madhya Pradesh (Indore): VDA order dated 30 Sep 2026 (notification no. 22288-337, as cited by getsleet.cloud) on the basic rates of notification F.4(B)1/2014/A-16 dated 4 Mar 2024.",
+    "verification_status": "SECONDARY_SOURCES_CONSISTENT__OFFICIAL_PDF_NOT_YET_OPENED",
+    "how_to_verify": "Open the notification listed under 'Minimum Wages' on labour.mponline.gov.in (Hindi PDF) and confirm unskilled = 12,575/month. Then change verification_status to VERIFIED_FROM_OFFICIAL_NOTIFICATION.",
+    "sources_checked_2026_11": [
+      "https://labourlawhelp.com/madhya-pradesh-minimum-wages/",
+      "https://labourcodes360.com/minimum-wages/madhya-pradesh",
+      "https://getsleet.cloud/resources/minimum-wages",
+      "https://ezhrm.in/minimum-wages-october-2026-state-wise-revisions-payroll-checklist/"
+    ],
+    "agricultural_schedule": {
+      "status": "NOT_VERIFIED",
+      "note": "MP lists agricultural employment separately. The Apr-Sep 2026 research found a LOWER VDA for agricultural workers (Rs 2,352 vs Rs 2,850 per month). The Oct 2026 agricultural figure was not found. Until it is, the engine treats a below-floor wage in a farm context as 'medium - verify', never as a confirmed violation."
+    }
+  }
+}

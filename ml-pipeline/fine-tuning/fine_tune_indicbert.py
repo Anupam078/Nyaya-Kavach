@@ -59,6 +59,7 @@ RUN:
     python fine_tune_indicbert.py
 """
 
+import argparse
 import json
 from collections import Counter
 from pathlib import Path
@@ -109,7 +110,7 @@ def split_data(texts: list[str], labels: list[int]):
         return train_test_split(texts, labels, test_size=0.15, random_state=42)
 
 
-def main():
+def main(epochs: int = 8, lr: float = 2e-5, batch_size: int = 8, seed: int = 42):
     # Deliberately deferred imports: these are heavy (torch especially) and
     # we want the fast, dependency-light data checks above to run and print
     # their warnings even if the ML libraries aren't installed yet.
@@ -147,13 +148,15 @@ def main():
 
     training_args = TrainingArguments(
         output_dir=str(OUTPUT_DIR / "checkpoints"),
-        num_train_epochs=8,
-        per_device_train_batch_size=8,
+        num_train_epochs=epochs,
+        seed=seed,
+        warmup_steps=0.1,   # a fraction (10% of steps) - supported in transformers 5.x; 'warmup_ratio' is deprecated there
+        per_device_train_batch_size=batch_size,
         per_device_eval_batch_size=8,
         eval_strategy="epoch",
         save_strategy="no",
         logging_steps=5,
-        learning_rate=2e-5,
+        learning_rate=lr,
         report_to="none",
     )
 
@@ -166,8 +169,11 @@ def main():
     )
 
     print("Starting training...\n")
-    trainer.train()
+    train_result = trainer.train()
     metrics = trainer.evaluate()
+    eval_by_epoch = list({round(e['epoch']): round(e['eval_loss'], 4) for e in trainer.state.log_history if 'eval_loss' in e and 'epoch' in e}.values())
+    print(f"\nValidation loss by epoch: {eval_by_epoch}")
+    print(f"Final training loss: {train_result.training_loss:.4f}   (chance level for 13 classes = 2.565)")
     print(f"\nFinal validation metrics: {metrics}")
     print("\nRemember: f1_macro treats every category equally regardless of size - a low")
     print("score here with this little data is expected, not alarming. Watch this number")
@@ -191,10 +197,19 @@ def main():
         "eval_accuracy": metrics.get("eval_accuracy"),
         "eval_f1_macro": metrics.get("eval_f1_macro"),
         "eval_loss": metrics.get("eval_loss"),
+        "train_loss": round(train_result.training_loss, 4),
+        "eval_loss_by_epoch": eval_by_epoch,
+        "hyperparameters": {"epochs": epochs, "learning_rate": lr, "batch_size": batch_size, "seed": seed, "warmup_fraction": 0.1},
     })
     log_path.write_text(json.dumps(log, indent=2), encoding="utf-8")
     print(f"Run logged to {log_path} - {len(log)} run(s) recorded so far.")
 
 
 if __name__ == "__main__":
-    main()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--epochs", type=int, default=8)
+    ap.add_argument("--lr", type=float, default=2e-5)
+    ap.add_argument("--batch-size", type=int, default=8)
+    ap.add_argument("--seed", type=int, default=42)
+    a = ap.parse_args()
+    main(a.epochs, a.lr, a.batch_size, a.seed)

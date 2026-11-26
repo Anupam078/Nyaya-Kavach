@@ -1,0 +1,13 @@
+{
+  "_readme": "Which deterministic rules may decide a verdict on their own. 'decisive' = the rule's severity is shown to the user directly. 'llm_review' = the rule only passes a HINT to the LLM layer, which decides using retrieved law. Any rule not listed defaults to 'llm_review' (the safe side).",
+  "_status": "PROVISIONAL. R3, R5, R7, R9 are set to llm_review because the first UNSEEN measurement showed ~0-7% agreement for them (handoff, section 5). R4 is also llm_review because its pattern is known to be broad. The others are 'decisive' only because nothing yet shows they are bad - NOT because they are proven. Re-set every entry after the fresh-holdout measurement (TODO C).",
+  "R1": "decisive",
+  "R2": "decisive",
+  "R3": "llm_review",
+  "R4": "llm_review",
+  "R5": "llm_review",
+  "R6": "decisive",
+  "R7": "llm_review",
+  "R8": "decisive",
+  "R9": "llm_review"
+}

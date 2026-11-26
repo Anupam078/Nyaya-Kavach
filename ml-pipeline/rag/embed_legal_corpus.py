@@ -40,6 +40,12 @@ MODEL_NAME = "intfloat/multilingual-e5-base"
 # returns *something*, it's just worse, so it's easy to miss if you skip it.
 PASSAGE_PREFIX = "passage: "
 
+try:  # read ml-pipeline/rag/.env if present (python-dotenv is in requirements.txt but was never actually called)
+    from dotenv import load_dotenv
+    load_dotenv(Path(__file__).parent / ".env")
+except ImportError:
+    pass
+
 DEFAULT_DB_URL = os.environ.get(
     "DATABASE_URL",
     "postgresql://nyaya:nyaya_dev_password@localhost:5432/nyaya_kavach",
